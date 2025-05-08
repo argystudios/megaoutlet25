@@ -16,4 +16,29 @@
   <div class="slideshow">
     <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1612423284934-2859937bb4f2?auto=format&fit=crop&w=1600&q=80');"></div>
     <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1600&q=80');"></div>
-    <div class="
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1621023519980-e14dbb51e0e7?auto=format&fit=crop&w=1600&q=80');"></div>
+  </div>
+
+  <div class="overlay">
+    <div class="contenido animate">
+      <img src="https://parquearauco.modyocdn.com/uploads/8ee8960b-2adb-4edf-a07a-67e7c50fab33/original/AM_LOGOS-WEB_700X200-11.png" alt="Arauco Premium Outlet Buenaventura" class="logo" />
+      <h1>OUTLET LIQUIDACIÓN</h1>
+      <h2>¡Hasta 70% de descuento!</h2>
+      <p class="fecha grande">17 y 18 de mayo, 2025</p>
+      <p class="direccion">Ruta 5 Norte 21500, Lampa, Región Metropolitana</p>
+      <a href="https://www.araucopremiumoutletbuenaventura.cl/" class="btn">INGRESAR</a>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 6000);
+  </script>
+</body>
+</html>
